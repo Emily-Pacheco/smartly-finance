@@ -1,0 +1,169 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #9370DB; /* Medium Purple */
+    color: white;
+    padding: 30px 0;
+}
+
+.nav-item {
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #8A5FD7;
+}
+
+.nav-item.active {
+    font-weight: bold;
+}
+
+/*Main Content Area*/ 
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Overview Page Month Grid */
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.month-card {
+    background-color: #9370DB;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.month-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.month-card p {
+    margin: 5px 0;
+}
+
+/* Accounts Page */
+.account-actions {
+    display: flex;
+    background-color: #9370DB;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn span {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.accounts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-item {
+    background-color: #9370DB;
+    border-radius: 30px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.account-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account-balance {
+    font-size: 20px;
+}
+
+/* Transactions Page */
+.transaction-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.new-btn {
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.transaction-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item.income .transaction-amount {
+    color: green;
+}
+
+.transaction-item.expense .transaction-amount {
+    color: red;
+}

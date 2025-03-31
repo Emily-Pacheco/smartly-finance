@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartly Finance - Transactions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-item">OverView</div>
+            <div class="nav-item active">Transactions</div>
+            <div class="nav-item">Accounts</div>
+            <div class="nav-item">Credit Cards</div>
+            <div class="nav-item">Budget</div>
+        </nav>
+        
+        <main class="content">
+            <h1>Transactions</h1>
+            
+            <div class="transaction-actions">
+                <button class="action-btn new-btn"><span>+</span> New Transaction</button>
+                <div class="transaction-filter">
+                    <label for="filter">Filter by:</label>
+                    <select id="filter">
+                        <option value="all">All Transactions</option>
+                        <option value="income">Income</option>
+                        <option value="expense">Expenses</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="transactions-list">
+                <div class="transaction-item income">
+                    <div class="transaction-date">March 28, 2025</div>
+                    <div class="transaction-desc">Salary</div>
+                    <div class="transaction-account">Bank Account</div>
+                    <div class="transaction-amount">+$2,500.00</div>
+                </div>
+                
+                <div class="transaction-item expense">
+                    <div class="transaction-date">March 27, 2025</div>
+                    <div class="transaction-desc">Grocery Shopping</div>
+                    <div class="transaction-account">Discover</div>
+                    <div class="transaction-amount">-$86.45</div>
+                </div>
+                
+                <div class="transaction-item expense">
+                    <div class="transaction-date">March 25, 2025</div>
+                    <div class="transaction-desc">Utilities</div>
+                    <div class="transaction-account">Bank Account</div>
+                    <div class="transaction-amount">-$142.50</div>
+                </div>
+                
+                <div class="transaction-item expense">
+                    <div class="transaction-date">March 23, 2025</div>
+                    <div class="transaction-desc">Dinner</div>
+                    <div class="transaction-account">Wallet</div>
+                    <div class="transaction-amount">-$45.00</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
