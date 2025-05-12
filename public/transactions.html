@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,24 +5,31 @@
     <title>Smartly Finance - Transactions</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <div class="container">
         <nav class="sidebar">
-            <div class="nav-item">OverView</div>
-            <div class="nav-item active">Transactions</div>
-            <div class="nav-item">Accounts</div>
-            <div class="nav-item">Credit Cards</div>
-            <div class="nav-item">Budget</div>
+            <a href="Overview.html" class="nav-item">OverView</a>
+            <a href="transactions.html" class="nav-item active">Transactions</a>
+            <a href="bankAccounts.html" class ="nav-item">Bank Accounts</a>
+            <a href="budgets.html" class="nav-item">Budgets</a>
         </nav>
+
+        
         
         <main class="content">
+            <header class="header">
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </header>
             <h1>Transactions</h1>
             
             <div class="transaction-actions">
-                <button class="action-btn new-btn"><span>+</span> New Transaction</button>
+                <button class="new-transaction-btn"><span>+</span> New Transaction</button>
+                <button class="delete-transaction-btn"><span>-</span> Delete Transaction</button>
                 <div class="transaction-filter">
-                    <label for="filter">Filter by:</label>
-                    <select id="filter">
+                   <span>Filter by:</span>
+                    <select class="filter-select">
                         <option value="all">All Transactions</option>
                         <option value="income">Income</option>
                         <option value="expense">Expenses</option>
@@ -31,7 +37,7 @@
                 </div>
             </div>
             
-            <div class="transactions-list">
+            <div class="transaction-list">
                 <div class="transaction-item income">
                     <div class="transaction-date">March 28, 2025</div>
                     <div class="transaction-desc">Salary</div>
@@ -42,27 +48,14 @@
                 <div class="transaction-item expense">
                     <div class="transaction-date">March 27, 2025</div>
                     <div class="transaction-desc">Grocery Shopping</div>
-                    <div class="transaction-account">Discover</div>
-                    <div class="transaction-amount">-$86.45</div>
-                </div>
-                
-                <div class="transaction-item expense">
-                    <div class="transaction-date">March 25, 2025</div>
-                    <div class="transaction-desc">Utilities</div>
-                    <div class="transaction-account">Bank Account</div>
-                    <div class="transaction-amount">-$142.50</div>
-                </div>
-                
-                <div class="transaction-item expense">
-                    <div class="transaction-date">March 23, 2025</div>
-                    <div class="transaction-desc">Dinner</div>
                     <div class="transaction-account">Wallet</div>
-                    <div class="transaction-amount">-$45.00</div>
+                    <div class="transaction-amount">-$86.45</div>
                 </div>
             </div>
         </main>
     </div>
     
-    <script src="js/main.js"></script>
+    <script src="js/logout.js"></script>
+    <script src ="js/transactions.js"></script>
 </body>
 </html>

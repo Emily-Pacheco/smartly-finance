@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,46 +6,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <div class="container">
         <nav class="sidebar">
-            <div class="nav-item">OverView</div>
-            <div class="nav-item">Transactions</div>
-            <div class="nav-item active">Accounts</div>
-            <div class="nav-item">Credit Cards</div>
-            <div class="nav-item">Budget</div>
+            <a href="Overview.html" class="nav-item">OverView</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="bankAccounts.html"class = "nav-item active">Bank Accounts</a> 
+             <a href="budgets.html">Budget</a>
         </nav>
-        
+
         <main class="content">
+
+             <header class="header">
+             <button id="logout-btn" class="logout-btn">Logout</button>
+            </header>
             <div class="account-actions">
                 <button class="action-btn new-btn"><span>+</span> New Account</button>
-                <button class="action-btn edit-btn"><span>✏️</span> Edit Account</button>
-                <button class="action-btn delete-btn"><span>🗑️</span> Delete Account</button>
+                <button class="action-btn edit-btn"></span> Edit Account</button>
+                <button class="action-btn delete-btn"><span>-</span> Delete Account</button>
             </div>
             
             <div class="accounts-list">
                 <div class="account-item">
                     <div class="account-name">Wallet</div>
-                    <div class="account-balance">$100.00</div>
+                    <div class="account-balance">$0.00</div>
                 </div>
                 
                 <div class="account-item">
                     <div class="account-name">Bank Account</div>
-                    <div class="account-balance">$1,500.00</div>
+                    <div class="account-balance">$0.00</div>
                 </div>
                 
                 <div class="account-item">
                     <div class="account-name">Savings Account</div>
-                    <div class="account-balance">$4,500.00</div>
-                </div>
-                
-                <div class="account-item">
-                    <div class="account-name">Discover</div>
-                    <div class="account-balance">$200.00</div>
+                    <div class="account-balance">$0.00</div>
                 </div>
             </div>
         </main>
     </div>
-    
-    <script src="js/main.js"></script>
+   
+    <script src="js/logout.js"></script>
+    <script src="js/bankAccounts.js"></script>
 </body>
 </html>

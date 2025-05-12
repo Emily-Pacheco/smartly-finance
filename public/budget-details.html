@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartly Finance - Budget Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <nav class="sidebar">
+            <a href="Overview.html" class="nav-item">OverView</a>
+            <a href="transactions.html" class="nav-item">Transactions</a>
+            <a href="bankAccounts.html" class="nav-item">Bank Accounts</a>
+            <a href="budgets.html" class="nav-item active">Budget</a>
+        </nav>
+  
+        <main class="content">
+
+            <header class="header">
+                <button id="logout-btn" class="logout-btn">Logout</button>
+            </header>
+            <div class="budget-title-bar">
+                <h1 id="budget-title">Budget Name</h1>
+                
+            </div>
+            
+            <div class="budget-info">
+                <div class="budget-field">
+                    <label for="payDate">Pay-Check Date:</label>
+                    <input type="date" id="payDate" class="budget-input">
+                </div>
+                
+                <div class="budget-field">
+                    <label for="payAmount">Pay-Check Amount:</label>
+                    <input type="number" id="payAmount" step="0.01" class="budget-input">
+                </div>
+                
+                <div class="budget-field">
+                    <label for="period">Period:</label>
+                    <input type="text" id="period" class="budget-input" placeholder="e.g., Bi-weekly, Monthly">
+                </div>
+            </div>
+            
+            <div id="budget-tables" class="budget-tables">    
+            </div>
+            
+            <div id="add-category-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add New Category</h2>
+                    <form id="new-category-form">
+                        <div class="form-group">
+                            <label for="category-name">Category Name:</label>
+                            <input type="text" id="category-name" required>
+                        </div>
+                        <button type="submit" class="create-btn">Add Category</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="budget-actions">
+                <button id="add-category-btn" class="action-btn">Add Category</button>
+                <button id="save-budget" class="save-btn">Save Budget</button>
+                <button id="back-to-budgets" class="back-btn">Back to Budgets</button>
+            </div>
+        </main>
+    </div>
+  
+    <script src="js/logout.js"></script>
+    <script src="js/budget-details.js"></script>
+</body>
+</html>

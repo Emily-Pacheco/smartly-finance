@@ -1,37 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Website</title>
+    <title>Smartly Finance</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Finance Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Investments</a></li>
-                <li><a href="#">Reports</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="dashboard">
-            <h2>Financial Overview</h2>
-            <div id="summary-cards">
-                <!-- Cards will be dynamically populated -->
+    <div class="landing-container">
+        <div class="landing-header">
+            <div class="app-logo">
+                <h1>Smartlee Finance</h1>
+            </div>
+            <p class="landing-taline">Take control of your finance</p>
+        </div>
+        
+        <section class="features-section">
+            <h2 class="features-heading">Your personal assistant</h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Track Expenses</h3>
+                    <p>Monitor where your money goes with detailed transaction tracking</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Manage Accounts</h3>
+                    <p>Keep all your financial accounts in one place</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Budget Planning</h3>
+                    <p>Create your own personalized budgets and view areas you can save</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Financial Goals</h3>
+                    <p>Set and track your savings goals</p>
+                </div>
             </div>
         </section>
-    </main>
+        
+        <div class="cta-buttons">
+            <a href="/login" class="btn primary-btn">Login</a>
+            <a href="/register.html" class="btn secondary-btn">Register</a>
+        </div>
+    </div>
     
-    <footer>
-        <p>&copy; 2025 Finance Website</p>
-    </footer>
-    
-    <script src="js/main.js"></script>
 </body>
 </html>

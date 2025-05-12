@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartly Finance - Budgets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <nav class="sidebar">
+            <a href="Overview.html" class="nav-item">OverView</a>
+            <a href="transactions.html" class="nav-item">Transactions</a>
+            <a href="bankAccounts.html" class ="nav-item">Bank Accounts</a>
+            <a href="budgets.html" class="nav-item active">Budgets</a>
+        </nav>
+
+        
+
+        <main class="content">
+
+            <header class="header">
+            <button id="logout-btn" class="logout-btn">Logout</button>
+            </header>
+
+            <div class = "budgets-header">
+            <h1>Budgets</h1>
+                <div class="budget-actions">
+                    <button id = "select-btn" class="select-btn">SELECT</button>
+                    <button id = "add-btn" class="add-btn">+</button>
+                    <button id = "delete-btn" class="delete-btn">-</button>
+                </div>
+            </div>
+
+            <div class="budget-grid" id="budgets-container">
+                <!-- Budget cards will be added here dynamically -->
+            </div>
+
+            <div id = "add-budget-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Create A New Budget</h2>
+                    <form id="new-budget-form">
+                        <div class="form-group">
+                            <label for="budget-name">Budget Name:</label>
+                            <input type="text" id="budget-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget-type">Budget Type:</label>
+                            <select id="budget-type">
+                                <option value="paycheck">Paycheck Budget</option>
+                                <option value="custom">Custom Budget</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="create-btn">Create Budget</button>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+        </div>
+
+        <script src="js/logout.js"></script>
+        <script src="js/budgets.js"></script>
+       </body>
+       </html>
